@@ -15,7 +15,6 @@ model User {
   password   String
   createdAt  DateTime    @default(now())
   moneyLists MoneyList[]
-
 }
 
 model MoneyList {
