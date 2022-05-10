@@ -1,0 +1,30 @@
+{
+  "name": "intern-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezdar2743/intern-server.git"
+  },
+  "author": "ezdar <ezdar2743@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^2.25.2",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/node": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "nodemon": "^2.0.16"
+  },
+  "description": "",
+  "bugs": {
+    "url": "https://github.com/ezdar2743/intern-server/issues"
+  },
+  "homepage": "https://github.com/ezdar2743/intern-server#readme",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server"
+  },
+  "keywords": []
+}
