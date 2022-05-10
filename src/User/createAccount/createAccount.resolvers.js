@@ -2,12 +2,12 @@ import client from "../../client";
 import bcrypt from "bcrypt";
 export default {
   Mutation: {
-    createAccount: async (_, { userName, email, name, password }) => {
+    createAccount: async (_, { loginId, email, name, password }) => {
       try {
         //exist already？
         const isUserExist = await client.user.findFirst({
           where: {
-            OR: [{ userName }, { email }],
+            OR: [{ loginId }, { email }],
           },
         });
         if (isUserExist) {
@@ -19,7 +19,7 @@ export default {
         //create
         await client.user.create({
           data: {
-            userName,
+            loginId,
             email,
             name,
             password: hashPassword,
