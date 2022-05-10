@@ -8,7 +8,7 @@
 
 # User
 
-- [] Create Account
+- [x] Create Account
 - [] Login
 - [] Protect loggedInUser
-- [] SeeUser
+- [] currentUser
