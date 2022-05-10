@@ -8,10 +8,25 @@ datasource db {
 }
 
 model User {
-  id        Int      @id @default(autoincrement())
-  userName  String
-  email     String
-  name      String
-  password  String
-  createdAt DateTime @default(now())
+  id         Int         @id @default(autoincrement())
+  userName   String
+  email      String
+  name       String
+  password   String
+  createdAt  DateTime    @default(now())
+  moneyLists MoneyList[]
+
+}
+
+model MoneyList {
+  id     Int    @id @default(autoincrement())
+  amount Int
+  title  String
+  date   String
+  year   Int
+  month  Int
+  user   User?  @relation(fields: [userId], references: [id])
+  userId Int?
+
+
 }
