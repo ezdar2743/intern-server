@@ -1,9 +1,6 @@
 import { gql } from "apollo-server";
 
 export default gql`
-  type Query {
-    currentUser: User
-  }
   type User {
     id: Int!
     loginId: String!
