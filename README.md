@@ -15,7 +15,7 @@
 
 # MoneyList
 
-- [] create List
-- [] delete List
-- [] update List
-- [] viewmoney
+- [x] create List
+- [x] delete List
+- [x] update List
+- [x] viewmoney
