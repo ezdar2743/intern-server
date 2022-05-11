@@ -10,5 +10,6 @@ export default gql`
     email: String!
     name: String!
     createdAt: String!
+    moneyLists: [MoneyList!]!
   }
 `;

@@ -3,5 +3,12 @@
 - [x] apolloServer
 - [x] babel
 - [x] dotenv
-- [] prisma
-- [] graphQLtools
+- [x] prisma
+- [x] graphQLtools
+
+# User
+
+- [] Create Account
+- [] Login
+- [] Protect loggedInUser
+- [] SeeUser
