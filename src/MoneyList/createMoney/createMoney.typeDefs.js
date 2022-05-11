@@ -1,11 +1,6 @@
 import { gql } from "apollo-server";
 
 export default gql`
-  type CreateResult {
-    ok: Boolean!
-    error: String
-  }
-
   type Mutation {
     createMoney(
       title: String!
@@ -13,6 +8,6 @@ export default gql`
       date: String!
       year: Int!
       month: Int!
-    ): CreateResult!
+    ): MutationResult!
   }
 `;
