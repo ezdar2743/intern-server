@@ -11,7 +11,7 @@ export default {
           },
         });
         if (isUserExist) {
-          throw Error("存在しているuserName/emailです。");
+          throw Error("存在しているLogin ID/emailです。");
         }
         const hashPassword = await bcrypt.hash(password, 10);
 
