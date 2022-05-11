@@ -9,6 +9,13 @@
 # User
 
 - [x] Create Account
-- [] Login
-- [] Protect loggedInUser
-- [] currentUser
+- [x] Login
+- [x] Protect loggedInUser
+- [x] currentUser
+
+# MoneyList
+
+- [] create List
+- [] delete List
+- [] update List
+- [] viewmoney
