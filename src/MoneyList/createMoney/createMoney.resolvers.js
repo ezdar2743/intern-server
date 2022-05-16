@@ -7,6 +7,12 @@ export default {
       { title, amount, date, year, month },
       { loggedInUser }
     ) => {
+      if (!loggedInUser) {
+        return {
+          ok: false,
+          error: "ログインしてください。",
+        };
+      }
       await client.moneyList.create({
         data: {
           title,
