@@ -1,4 +1,3 @@
-import jsonwebtoken from "jsonwebtoken";
 import jwt from "jsonwebtoken";
 import client from "../client";
 
